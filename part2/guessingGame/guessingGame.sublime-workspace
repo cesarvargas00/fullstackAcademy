@@ -1,0 +1,391 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"mini",
+				"min-height"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"Vo",
+				"VowelCount"
+			],
+			[
+				"Fir",
+				"FirstReverse"
+			],
+			[
+				"Simpl",
+				"SimpleAdding"
+			],
+			[
+				"font",
+				"font"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"c",
+				"cl	console.log"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/untitled.sublime-build",
+	"command_palette":
+	{
+		"height": 167.0,
+		"selected_items":
+		[
+			[
+				"pick",
+				"Color Picker"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"package rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal ",
+				"Package Control: Install Package"
+			],
+			[
+				"gist",
+				"Package Control: Install Package"
+			],
+			[
+				"dash",
+				"DashDoc: invoke Dash with selected word"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 448.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/cesarvargas/Desktop/fullstackAcademy/README.md",
+		"/Users/cesarvargas/Desktop/fullstackAcademy/README",
+		"/Users/cesarvargas/Desktop/cLEARN/others.csv",
+		"/Users/cesarvargas/Desktop/cLEARN/spooky.csv",
+		"/etc/hosts",
+		"/Users/cesarvargas/Development/tweetColetor/coletor.py",
+		"/Users/cesarvargas/Desktop/untitled.html",
+		"/Users/cesarvargas/Sites/fullstack/portfolioWebsite/index.html",
+		"/Users/cesarvargas/Sites/fullstack/portfolioWebsite/css/main.css",
+		"/Users/cesarvargas/Sites/fullstack/portfolioWebsite/contact.html",
+		"/Users/cesarvargas/Sites/fullstack/portfolioWebsite/css/responsive.css",
+		"/Users/cesarvargas/Sites/fullstack/portfolioWebsite/about.html",
+		"/Users/cesarvargas/Sites/fullstack/portfolioWebsite/css/normalize.css",
+		"/Users/cesarvargas/Desktop/fullstakAcademy/assignements.js",
+		"/usr/include/sys/_types.h",
+		"/usr/include/_types.h",
+		"/usr/include/stdio.h",
+		"/usr/local/include/sql3types.h",
+		"/private/etc/hosts",
+		"/Users/cesarvargas/Desktop/Rust.app/Contents/Info.plist",
+		"/Users/cesarvargas/Desktop/Rust.app/Contents/MacOS/run.sh",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/cesarvargas/.bash_profile",
+		"/etc/profile",
+		"/Users/cesarvargas/.bashrc",
+		"/Users/cesarvargas/Desktop/metasploit.sh",
+		"/Users/cesarvargas/bash_pro",
+		"/Users/cesarvargas/Desktop/inject/injection.cpp",
+		"/Users/cesarvargas/Desktop/inject/dynlib.hpp",
+		"/Users/cesarvargas/Desktop/inject/dynlib.cpp",
+		"/Users/cesarvargas/Desktop/inject/app.cpp",
+		"/Users/cesarvargas/Library/Application Support/Steam/SteamApps/common/rust/rust.app/Contents/Frameworks/MonoEmbedRuntime/osx/libsteam_api.dylib",
+		"/Users/cesarvargas/Library/Application Support/Steam/SteamApps/common/rust/rust.app/Contents/Frameworks/MonoEmbedRuntime/osx/librust.dylib",
+		"/Users/cesarvargas/Desktop/streamBermuda.c",
+		"/Users/cesarvargas/Desktop/geo2json.c",
+		"/Users/cesarvargas/Desktop/geo.json",
+		"/Users/cesarvargas/Desktop/page124.c",
+		"/Users/cesarvargas/Desktop/page125.c",
+		"/Users/cesarvargas/Desktop/spooky.csv",
+		"/Users/cesarvargas/Desktop/test.c",
+		"/Users/cesarvargas/Downloads/AppleDoesntGiveAFuckAboutSecurity/README",
+		"/Users/cesarvargas/Sites/stylesheets/base.css",
+		"/Users/cesarvargas/Sites/stylesheets/layout.css",
+		"/Users/cesarvargas/Sites/index.html",
+		"/Users/cesarvargas/Library/Application Support/Sublime Text 3/Packages/User/untitled.sublime-build",
+		"/Users/cesarvargas/Desktop/test.js",
+		"/Users/cesarvargas/Library/Application Support/Sublime Text 3/Packages/User/Nodejs.sublime-settings",
+		"/Users/cesarvargas/Library/Application Support/Sublime Text 3/Packages/Nodejs/Nodejs.sublime-settings",
+		"/Users/cesarvargas/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/cesarvargas/Desktop/tests.html",
+		"/Users/cesarvargas/Desktop/apply.txt",
+		"/Users/cesarvargas/Desktop/bckp/rnd/rnd_image.py",
+		"/Users/cesarvargas/Development/frilas/heyJob_2.0/index.html",
+		"/Users/cesarvargas/Development/frilas/heyJob_2.0/stylesheets/layout.css",
+		"/Users/cesarvargas/Development/frilas/heyJob_2.0/stylesheets/skeleton.css",
+		"/Users/cesarvargas/.zshrc",
+		"/Users/cesarvargas/Desktop/bckp/heyJob_2.0/index.html",
+		"/Users/cesarvargas/.config/fish/config.fish",
+		"/Users/cesarvargas/config.fish",
+		"/Users/cesarvargas/Dropbox/config/bashrc",
+		"/Users/cesarvargas/Dropbox/config/.bashrc",
+		"/etc/launchd.conf",
+		"/Users/cesarvargas/Development/tweepy/coletor.py",
+		"/Users/cesarvargas/Desktop/nonagon.svg",
+		"/Users/cesarvargas/Library/Application Support/minecraft/versions/1.7.5.mods/1.7.5.mods.jar/META-INF/MANIFEST.MF",
+		"/Users/cesarvargas/Library/Application Support/minecraft/versions/1.7.5.mods/1.7.5.mods.json",
+		"/Users/cesarvargas/Library/Application Support/minecraft/versions/1.7.5.mods/1.7.5.json",
+		"/Users/cesarvargas/Desktop/test.py",
+		"/etc/shells"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"==",
+			"count",
+			"==",
+			";",
+			"img/port/",
+			"img",
+			"portfolio",
+			"NewJune",
+			"newJune",
+			"style",
+			"#272928",
+			"color",
+			"html",
+			"body",
+			"5",
+			"heyJob",
+			"hr",
+			"b",
+			"3",
+			"h4",
+			" \n",
+			"HeyJob",
+			"<hr/>",
+			"1.7.5",
+			"files",
+			"_Printer",
+			"class"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "guessingGame.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
