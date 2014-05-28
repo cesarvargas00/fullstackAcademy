@@ -1,0 +1,30 @@
+body{
+	background-image:url('../img/chalkboard.jpg');
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:center;
+	color:#fff;
+	font-size: 1.5em;
+	letter-spacing: 1.5px;
+	font-family: 'Just Another Hand', cursive;
+	background-color: #273f45;
+}
+
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 100px 5%;
+	text-align: center;
+}
+
+#options{
+	padding: 20px;
+}
+#feedback{
+	height: 30px;
+}
+
+#remainingGuesses {
+	margin-top: 10px;
+	text-align: center;
+}
