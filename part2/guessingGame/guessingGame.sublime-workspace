@@ -99,15 +99,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 730,
+				"buffer_size": 729,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/cesarvargas/Desktop/fullstackAcademy/.gitignore",
+			"file": "js/game.js",
 			"settings":
 			{
-				"buffer_size": 43,
+				"buffer_size": 1452,
 				"line_ending": "Unix"
 			}
 		}
@@ -115,9 +115,13 @@
 	"build_system": "Packages/User/untitled.sublime-build",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 127.0,
 		"selected_items":
 		[
+			[
+				"dash",
+				"DashDoc: invoke Dash with selected word"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -149,10 +153,6 @@
 			[
 				"gist",
 				"Package Control: Install Package"
-			],
-			[
-				"dash",
-				"DashDoc: invoke Dash with selected word"
 			],
 			[
 				"instap",
@@ -200,8 +200,10 @@
 	},
 	"file_history":
 	[
-		"/Users/cesarvargas/Desktop/fractal-trees/README.md",
+		"/private/etc/apache2/httpd.conf",
+		"/private/etc/apache2/extra/httpd-default.conf",
 		"/Users/cesarvargas/Desktop/fullstackAcademy/.gitignore",
+		"/Users/cesarvargas/Desktop/fractal-trees/README.md",
 		"/Users/cesarvargas/Desktop/fullstackAcademy/part2/guessingGame/guessingGame.sublime-project",
 		"/Users/cesarvargas/Desktop/fullstackAcademy/README.md",
 		"/Users/cesarvargas/Desktop/fullstackAcademy/README",
@@ -224,7 +226,6 @@
 		"/private/etc/hosts",
 		"/Users/cesarvargas/Desktop/Rust.app/Contents/Info.plist",
 		"/Users/cesarvargas/Desktop/Rust.app/Contents/MacOS/run.sh",
-		"/private/etc/apache2/httpd.conf",
 		"/Users/cesarvargas/.bash_profile",
 		"/etc/profile",
 		"/Users/cesarvargas/.bashrc",
@@ -275,7 +276,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -333,7 +334,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -342,56 +343,57 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 730,
+						"buffer_size": 729,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								730,
-								730
+								143,
+								143
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/3024_Day.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/cesarvargas/Desktop/fullstackAcademy/.gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 43,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								34,
-								34
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/3024_Day.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/game.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								950,
+								950
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/3024_Day.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 301.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
