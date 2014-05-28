@@ -1,11 +1,3 @@
-/*
-Things to do:
-
-1 - Track the user's previous guess. Let them know if they are getting “hotter” or “colder” based on their previous guess.
-2 - Reset button does not remove disabled from other buttons, yet.
-3 - CSS this!
-*/
-
 $(document).ready(function(){
 
 
@@ -23,6 +15,13 @@ $(document).ready(function(){
 		theNumber = generateRandom();
 		lifes = 5;
 		guesses	= [];
+		$("#submitGuess").prop("disabled",false);
+		$("#hint").prop("disabled",false);
+		$("#feedback").html("");
+	}
+
+	function hintMe(){
+		$("#feedback").html("Try " + theNumber);
 	}
 
 	function play(number){
@@ -89,6 +88,8 @@ $(document).ready(function(){
 				lifes--;
 				$("#remainingGuesses").html(lifes + " guesses remainining.");
 				if (lifes === 0) {
+					$("#submitGuess").prop("disabled",true);
+					$("#hint").prop("disabled",true);
 					$("#feedback").html("GAME OVER, PAL!");
 				}
 			}
@@ -107,5 +108,10 @@ $(document).ready(function(){
 	//attach button to function resetGame()
 	$("#playAgain").on("click",function(event) {
 		resetGame();
+	});
+
+	//attach button to function hintMe()
+	$("#hint").on("click",function(event) {
+		hintMe();
 	});
 });
