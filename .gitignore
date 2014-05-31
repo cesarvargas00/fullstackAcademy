@@ -1,3 +1,5 @@
 #MacOS X junk files
 [Tt]humbs.db
 *.DS_Store
+*.sublime-workspace
+*.sublime-project
