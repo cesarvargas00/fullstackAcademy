@@ -11,8 +11,8 @@ function translate(str) {
 	for(var i = 0; i < ar.length; i++){
 		while(!isVowel(ar[i].charAt(0)))
 			ar[i] = ar[i].slice(1) + ar[i].charAt(0);
-			if(ar[i].charAt(0) === "u" && ar[i].slice(-1) === "q")
-				ar[i] = ar[i].slice(1) + ar[i].charAt(0);
+		if(ar[i].charAt(0) === "u" && ar[i].slice(-1) === "q")
+			ar[i] = ar[i].slice(1) + ar[i].charAt(0);
 		ar[i] += "ay";
 	}
 	return ar.join(" ");
