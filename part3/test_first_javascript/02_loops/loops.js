@@ -8,10 +8,10 @@
 	function join(arr, delimiter){
     	var res = "";
     	for(var i = 0; i < arr.length; i++){
-    		res += arr[i];
     		if(delimiter) res += delimiter;
+    		res += arr[i];
     	}
-    	if(delimiter) res = res.slice(0,res.length - 1);
+    	if(delimiter) res = res.slice(1);
     	return res;
 	}
 
@@ -21,27 +21,24 @@
 			sum += arr[i];
 		return sum;
 	}
-
-	// describe("looping over hashes", function() {
-	// 	describe("paramify", function() {
-
-	// 		it("skips properties of the object's prototype", function() {
-	// 			var Alphabet = function() { 
-	// 				this.a = 1;
-	// 				this.b = 2;
-	// 			}
-	// 			Alphabet.prototype = {c: 3};
-	// 			expect(paramify(new Alphabet())).toEqual("a=1&b=2");
-	// 		});
-	// 	});
- 	//  });	  
-
+	  
 	function paramify(object){
 		res = "";
 		for (var o in object){
-			res += "&" + o + "=" + object[o];
+			if(object.hasOwnProperty(o))
+				res += "&" + o + "=" + object[o];
 		}
 		//splits into an array, slices the first element (empty because of & above), sorts alphabetically, and join back to a string with & delimiter
 		return res.split("&").slice(1).sort().join("&");
 	}
 
+	function factorial(n){
+		if (n === 0)
+			return 1;
+		return factorial(n-1) * n;
+	}
+
+	function concat_string(){
+		var args = Array.prototype.slice.call(arguments);
+		return args.join("");
+	}
