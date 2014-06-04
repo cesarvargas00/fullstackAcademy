@@ -6,13 +6,13 @@
 	}
 	
 	function join(arr, delimiter){
-    	var res = "";
-    	for(var i = 0; i < arr.length; i++){
-    		if(delimiter) res += delimiter;
-    		res += arr[i];
-    	}
-    	if(delimiter) res = res.slice(1);
-    	return res;
+    		var res = "";
+    		for(var i = 0; i < arr.length; i++){
+    			if(delimiter) res += delimiter;
+    			res += arr[i];
+    		}
+    		if(delimiter) res = res.slice(1);
+    		return res;
 	}
 
 	function sum (arr){
