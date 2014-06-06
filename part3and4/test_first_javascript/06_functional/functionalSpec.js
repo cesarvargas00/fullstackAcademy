@@ -80,7 +80,7 @@ describe("contains", function() {
 });
 
 
-// reduce takes an array and combines elements using some combination funcation
+// reduce takes an array and combines elements using some combination function
 // you can imagine the reduction function eating two elements at a time and creating a new value
 // then eating that new value with the next value in the array
 describe("reduce takes an array, starting point, and combining function and", function() {
@@ -131,6 +131,7 @@ describe("every", function() {
     expect(every([0, 11, 28], isEven)).toEqual(false);
   });
 });
+
 
 describe("any", function() {
   var isEven = function(number){
