@@ -61,3 +61,19 @@ function any(arr, fun){
 	if (arr.length === 0) return false;
 	return fun(arr[0]) || any(arr.slice(1),fun)
 }
+
+function once(fun){ //is this the decorator pattern?
+	this.ran = false;
+	return function(){
+		if(!this.ran){
+			fun();
+			this.ran = true;
+		}
+	};
+}
+
+function wrapper(fun, wrapFun){
+	return function(){
+		return wrapFun(fun);
+	};
+}
