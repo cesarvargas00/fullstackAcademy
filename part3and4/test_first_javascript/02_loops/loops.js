@@ -4,14 +4,17 @@
 			arr.push(str);
 		return arr.join("");
 	}
-	
+
 	function join(arr, delimiter){
     		var res = "";
-    		for(var i = 0; i < arr.length; i++){
-    			if(delimiter) res += delimiter;
+        var len = arr.length;
+        var delim = "";
+        if(typeof delimiter != "undefined") delim = delimiter;
+    		for(var i = 0; i < len; i++){
+    			res += delim;
     			res += arr[i];
     		}
-    		if(delimiter) res = res.slice(1);
+    		if(typeof delimiter!= "undefined") res = res.slice(1);
     		return res;
 	}
 
@@ -21,7 +24,7 @@
 			sum += arr[i];
 		return sum;
 	}
-	  
+
 	function paramify(object){
 		res = "";
 		for (var o in object){
