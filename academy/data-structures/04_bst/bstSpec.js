@@ -10,19 +10,26 @@ describe("binarySearchTree", function() {
     expect(tree.contains).toEqual(jasmine.any(Function));
     expect(tree.depthFirstMap).toEqual(jasmine.any(Function));
   });
-  
+
   it("should take values and report size correctly", function () {
     tree.insert(12);
-    expect(tree.size()).toEqual(2);
+    tree.insert(33);
+    tree.insert(12);
+    tree.insert(2);
+    tree.insert(64);
+    tree.insert(1);
+    tree.insert(12);
+    tree.insert(35);
+    expect(tree.size()).toEqual(9);
   });
-  
+
   it("should make nodes on the correct branches", function () {
     tree.insert(12);
     tree.insert(22);
     expect(tree.left.value).toEqual(12);
     expect(tree.right.value).toEqual(22);
   });
-  
+
   it("should sort values when adding", function() {
     expect(tree.value).toEqual(20);
     tree.insert(15);
