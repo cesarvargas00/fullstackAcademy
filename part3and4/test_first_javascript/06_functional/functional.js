@@ -15,18 +15,29 @@ function forEach(arr, fun){
 	}
 }
 
+//i've done this way.
+// function map(arr, fun){
+// 	var newArray = [];
+// 	for(var i = 0; i < arr.length; i++){
+// 		ret.push(fun(arr[i]));
+// 	}
+// 	return ret;
+// }
+
+//their way of doing it.
 function map(arr, fun){
-	var ret = [];
-	for(var i = 0; i < arr.length; i++){
-		ret.push(fun(arr[i]));
-	}
-	return ret;
+  var newArray = [];
+  forEach(arr,function(currentValue){
+    var mappedValue = fun(currentValue);
+    newArray.push(mappedValue);
+  });
+  return newArray;
 }
 
 function filter(arr, fun){
 	var ret = [];
 	for(var i = 0; i < arr.length; i++)
-		if (fun(arr[i])) 
+		if (fun(arr[i]))
 			ret.push(arr[i]);
 	return ret;
 }
@@ -37,11 +48,25 @@ function contains(col,value){
 	return false;
 }
 
-//this was difficult!! Had to use a piece of paper to think :/
+
 function reduce(arr, start, fun){
 	if(start === arr.length - 1) return arr[start]; //base case
 	return fun(reduce(arr, start + 1, fun), arr[start]);
 }
+
+//David's done this way.
+// function reduce(arr, start, fun) {
+//   if arr.length < 2
+//     return arr[0];
+//   var newArray = [];
+//   newArray.push(func(arr[0], arr[1]));
+//   newArray.concat(arr.slice(2,arr.length));
+//   return reduce(newArray, start, fun);
+// }
+
+// function reduce(arr,start,fun){
+
+// }
 
 function countWordsInReduce(a, b){
 	return countWords(a) + countWords(b); //ohh ok, thats why countWords is in this section :D
@@ -63,11 +88,11 @@ function any(arr, fun){
 }
 
 function once(fun){ //is this the decorator pattern?
-	this.ran = false;
+	this.firstTime = true;
 	return function(){
-		if(!this.ran){
+		if(this.firstTime){
 			fun();
-			this.ran = true;
+			this.firstTime = false;
 		}
 	};
 }
