@@ -10,7 +10,6 @@ function Node(value) {
 }
 
 LinkedList.prototype.addToTail = function(element) {
-  debugger;
   var nodeToAdd = new Node(element);
   if (typeof this.tail === "undefined"){
     this.head = nodeToAdd;
@@ -20,7 +19,19 @@ LinkedList.prototype.addToTail = function(element) {
     nodeToAdd.previous = this.tail;
     this.tail = nodeToAdd;
   }
+};
 
+LinkedList.prototype.removeTail = function() {
+  if(typeof this.tail === "undefined"){return;}
+  var currentTail = this.tail;
+  if(this.tail.previous !== null){
+    this.tail = this.tail.previous;
+    this.tail.next = null;
+  } else {
+    this.head = undefined;
+    this.tail = undefined;
+  }
+  return currentTail.value;
 };
 
 LinkedList.prototype.removeHead = function(element) {
@@ -38,6 +49,21 @@ LinkedList.prototype.removeHead = function(element) {
 };
 
 LinkedList.prototype.addToHead = function(element) {
-
+  var nodeToAdd = new Node(element);
+  if (typeof this.head === "undefined"){
+    this.head = nodeToAdd;
+    this.tail = nodeToAdd;
+  } else {
+    this.head.previous = nodeToAdd;
+    nodeToAdd.next = this.tail;
+    this.head = nodeToAdd;
+  }
 };
-LinkedList.prototype.search = function(element) {};
+LinkedList.prototype.search = function(element) {
+  var pntr = this.head;
+  while(pntr !== null){
+    if(pntr.value === element) return true;
+    pntr = pntr.next;
+  }
+  return false;
+};
