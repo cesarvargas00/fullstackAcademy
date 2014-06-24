@@ -4,3 +4,5 @@
 *.sublime-workspace
 *.sublime-project
 /gitForks/*
+academy/imdb-large.sqlite3.db
+academy/wikistack/node_modules
