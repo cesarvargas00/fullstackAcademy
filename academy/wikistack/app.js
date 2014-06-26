@@ -12,6 +12,7 @@ var add_routes = require('./routes/add')
 var users = require('./routes/users');
 var wiki = require('./routes/wiki');
 var delete_routes = require('./routes/delete');
+var edit_routes = require('./routes/edit');
 
 var app = express();
 app.engine('html', swig.renderFile);
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/delete', delete_routes);
 app.use('/users', users);
+app.use('/edit', edit_routes);
 app.use('/add', add_routes);
 app.use('/wiki', wiki);
 

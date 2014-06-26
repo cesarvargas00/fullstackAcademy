@@ -14,8 +14,7 @@ module.exports = function(swig) {
     return marked(body);
   };
 
-
-  marked.safe = true;
+  // marked.safe = true;
   page_link.safe = true;
 
   swig.setFilter('marked', marked);

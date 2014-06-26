@@ -1,0 +1,17 @@
+{
+  "name": "movie_mongo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "~2.2.3",
+    "mongodb": "~1.4.2",
+    "chai": "~1.9.1",
+    "async": "~0.8.0"
+  }
+}

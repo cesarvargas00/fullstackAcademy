@@ -5,7 +5,18 @@
     {% if docs.length > 0 %}
     <ul>
       {% for doc in docs %}
-        <li>{{ doc|page_link }} <a href="/delete/{{doc.url_name}}">delete</a></li>
+        <li>{{ doc|page_link }}
+          <a href="/delete/{{doc.url_name}}">
+            <span class="label label-danger">
+              <i class="glyphicon glyphicon-trash"></i>
+            </span>
+          </a>
+          <a href="/edit/{{doc.url_name}}">
+            <span class="label label-warning">
+              <i class="glyphicon glyphicon-edit"></i>
+            </span>
+          </a>
+        </li>
       {% endfor %}
     </ul>
     {% else %}
