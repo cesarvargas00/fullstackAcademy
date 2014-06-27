@@ -13,6 +13,7 @@ var swig = require('swig');
 var app = express();
 
 // Swig Setup
+swig.setDefaults({ cache: false });
 app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
@@ -32,7 +33,7 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(
   sass.middleware({
-    src: __dirname + '/assets', //where the sass files are 
+    src: __dirname + '/assets', //where the sass files are
     dest: __dirname + '/public', //where css should go
     // includePaths: __dirname + '/assets/stylesheets',
     debug: true // obvious

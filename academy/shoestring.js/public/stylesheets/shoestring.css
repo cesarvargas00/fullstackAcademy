@@ -406,5 +406,155 @@ footer {
     height: 70%;
     /* increases the carousel height so it looks good on phones */ } }
 
-body h1 {
-  color: white; }
+/* ==========================================================================
+   GRID SYSTEM
+   ==========================================================================
+*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  width: 1140px;
+  padding: 0 15px;
+  height: 100%; }
+
+.row {
+  width: 100%;
+  clear: both; }
+
+.col-lg-1 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 62px; }
+
+.col-lg-2 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 157px; }
+
+.col-lg-3 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 252px; }
+
+.col-lg-4 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 347px; }
+
+.col-lg-5 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 442px; }
+
+.col-lg-6 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 537px; }
+
+.col-lg-7 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 632px; }
+
+.col-lg-8 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 727px; }
+
+.col-lg-9 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 822px; }
+
+.col-lg-10 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 917px; }
+
+.col-lg-11 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 1012px; }
+
+.col-lg-12 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  width: 1107px; }
+
+body {
+  font-size: 14px;
+  line-height: 1.42;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0; }
+
+.navbar-inverse {
+  background-color: #222;
+  border-color: #080808; }
+
+.img-responsive {
+  width: 100%; }
+
+h3 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  height: 26px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 360px; }
+
+h2 {
+  color: #333333;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  height: 33px;
+  line-height: 33px; }
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+a {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  box-sizing: border-box;
+  color: #428bca;
+  cursor: auto;
+  display: inline;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  text-decoration: none solid #428bca;
+  width: auto; }
+
+.text-center {
+  text-align: center; }
+
+footer {
+  text-align: center; }
