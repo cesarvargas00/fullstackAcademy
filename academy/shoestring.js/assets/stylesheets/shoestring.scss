@@ -1,79 +1,105 @@
 @import "normalize";
 @import "modern-business";
-@import "grid";
 
-$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+//html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+$nav-height: 50px;
+$nav-padding: 15px;
+
+@mixin clearfix() {
+  &:after {
+    content: " ";
+    display: table;
+    clear:both;
+  }
+}
+
 body {
-  font-size: 14px;
-  line-height: 1.42;
+  h1 {
+    color: white;
+    padding: 1px;
+  }
+}
+
+.navbar {
+  height: $nav-height;
+  box-sizing: border-box;
   color: #333;
-  font-family: $font-family;
-  padding:0;
+  font: normal 14px arial,sans-serif;
+  background: #eee;
+
+  a {
+    color: #ccc;
+    text-decoration: none;
+  }
 }
 
 .navbar-inverse {
-  background-color:#222;
-  border-color:#080808;
+  color: #ccc;
+  background-color: #333;
 }
 
-.img-responsive{
-  width:100%;
-}
-
-h3{
-  color: rgb(51, 51, 51);
-  font-size: 24px;
-  font-weight: 500;
-  height: 26px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  width: 360px;
-}
-
-h2{
-color: rgb(51, 51, 51);
-font-size: 30px;
-font-weight: 500;
-margin-bottom: 10px;
-  margin-top: 20px;
-height: 33px;
-line-height: 33px;
-}
-
-.navbar-fixed-top{
+.navbar-fixed-top {
   position: fixed;
-  right: 0;
+  top: 0;
   left: 0;
-  z-index: 1030;
+  width: 100%;
 }
 
-a{
-  -webkit-background-clip: border-box;
--webkit-background-origin: padding-box;
--webkit-background-size: auto;
-background-attachment: scroll;
-background-clip: border-box;
-background-color: rgba(0, 0, 0, 0);
-background-image: none;
-background-origin: padding-box;
-background-size: auto;
-box-sizing: border-box;
-color: rgb(66, 139, 202);
-cursor: auto;
-display: inline;
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-font-size: 14px;
-height: auto;
-line-height: 20px;
-text-decoration: none solid rgb(66, 139, 202);
-width: auto;
+.navbar-header {
+  float:left;
+  padding: $nav-padding;
 }
 
-.text-center{
-  text-align: center;
+
+ul.nav {
+  margin: 0;
+  list-style-type: none;
+  float:right;
+
+  li {
+    display:block;
+    box-sizing: border-box;
+    float:left;
+    height: $nav-height;
+    padding: $nav-padding 10px;
+
+    &:hover {
+      background: #ccc;
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+.img-responsive {
+  width: 100%;
 }
 
-footer{
-  text-align: center;
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  @include clearfix();
 }
 
+.row {
+  margin: 0 0;
+  @include clearfix();
+}
+
+/* grid definitions */
+
+$grid-cols: 12;
+$gutter-width: .015;
+
+@for $i from 1 through $grid-cols {
+  .col-lg-#{$i} {
+    color: #000;
+    box-sizing: border-box;
+    padding: 0 percentage($gutter-width);
+    width: percentage($i/$grid-cols);
+    float:left;
+  }
+}
