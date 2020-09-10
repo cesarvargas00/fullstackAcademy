@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "sqlite3": "~2.2.3",
-    "mongodb": "~1.4.2",
+    "mongodb": "~3.6.1",
     "chai": "~1.9.1",
     "async": "~0.8.0"
   }
